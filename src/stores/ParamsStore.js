@@ -115,11 +115,16 @@ export default class ParamsStore {
 
   //   localstorage ------------------------------------------------------------------------
   writeToLocalstorage = json => {
-    localStorage.setItem("newa-blueberry-maggot-model", JSON.stringify(json));
+    localStorage.setItem(
+      "newa-cranberry-fruitworm-model",
+      JSON.stringify(json)
+    );
   };
 
   readFromLocalstorage = () => {
-    const localStorageRef = localStorage.getItem("newa-blueberry-maggot-model");
+    const localStorageRef = localStorage.getItem(
+      "newa-cranberry-fruitworm-model"
+    );
     if (localStorageRef) {
       const params = JSON.parse(localStorageRef);
 
