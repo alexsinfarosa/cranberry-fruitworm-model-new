@@ -1,1 +1,1 @@
-# NEWA Blueberry Maggot Model
+# NEWA Cranberry Fruitworm Model
