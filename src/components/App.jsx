@@ -21,7 +21,7 @@ import GDDTable from "./GDDTable";
 import USMap from "./USMap";
 import Footer from "./Footer";
 import Disclaimer from "./Disclaimer";
-import OutOfSeasonMessage from "./OutOfSeasonMessage";
+// import OutOfSeasonMessage from "./OutOfSeasonMessage";
 
 const drawerWidth = 255;
 const styles = theme => ({
@@ -103,7 +103,7 @@ class App extends Component {
 
   render() {
     const { classes } = this.props;
-    const { station, isSeason } = this.props.appStore.paramsStore;
+    const { station } = this.props.appStore.paramsStore;
     const { data } = this.props.appStore.currentModel;
 
     return (
