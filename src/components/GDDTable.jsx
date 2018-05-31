@@ -112,7 +112,7 @@ class GDDTable extends Component {
                     }}
                     colSpan={4}
                   >
-                    <div>DEGREE DAYS (BASE 50 ˚F) BE</div>
+                    <div>DEGREE DAYS (BASE 50 ˚F)</div>
                   </TableCell>
                   <TableCell
                     className={classes.isMobile}
