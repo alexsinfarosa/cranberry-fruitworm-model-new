@@ -56,7 +56,7 @@ class PhenologyTable extends Component {
           gutterBottom
           style={{ letterSpacing: 1 }}
         >
-          INSECT PHENOLOGY AND DEGREE DAY BASE 50˚F. ACCUMULATION FROM MARCH 1st
+          PHENOLOGY DEGREE DAY RANGES
         </Typography>
         <Paper>
           <Table className={classes.table}>
@@ -65,11 +65,13 @@ class PhenologyTable extends Component {
                 <TableCell className={classes.tableCell}>
                   INSECT EVENT
                 </TableCell>
-                <TableCell className={classes.tableCell}>MSU PADDING</TableCell>
-                <TableCell className={classes.tableCell}>MIN</TableCell>
-                <TableCell className={classes.tableCell}>AVG</TableCell>
-                <TableCell className={classes.tableCell}>MAX</TableCell>
-                <TableCell className={classes.tableCell}>RANGE</TableCell>
+                <TableCell className={classes.tableCell}>
+                  RANGE (From March 1)
+                </TableCell>
+                <TableCell className={classes.tableCell}>
+                  MEAN (From March 1)
+                </TableCell>
+                <TableCell className={classes.tableCell}>FROM BIOFIX</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -77,39 +79,27 @@ class PhenologyTable extends Component {
                 <TableCell className={classes.tableCell}>
                   Moths emerge
                 </TableCell>
-                <TableCell className={classes.tableCell}>
-                  5 &rarr; 350
-                </TableCell>
-                <TableCell className={classes.tableCell}>355</TableCell>
-                <TableCell className={classes.tableCell}>375</TableCell>
-                <TableCell className={classes.tableCell}>395</TableCell>
                 <TableCell className={classes.tableCell}>350-395</TableCell>
+                <TableCell className={classes.tableCell}>375</TableCell>
+                <TableCell className={classes.tableCell}>0</TableCell>
               </TableRow>
 
               <TableRow>
                 <TableCell className={classes.tableCell}>
                   Egg laying begins
                 </TableCell>
-                <TableCell className={classes.tableCell}>
-                  5 &rarr; 435
-                </TableCell>
-                <TableCell className={classes.tableCell}>440</TableCell>
-                <TableCell className={classes.tableCell}>460</TableCell>
-                <TableCell className={classes.tableCell}>480</TableCell>
                 <TableCell className={classes.tableCell}>435-480</TableCell>
+                <TableCell className={classes.tableCell}>460</TableCell>
+                <TableCell className={classes.tableCell}>85</TableCell>
               </TableRow>
 
               <TableRow>
                 <TableCell className={classes.tableCell}>
                   Egg laying ends
                 </TableCell>
-                <TableCell className={classes.tableCell}>
-                  5 &rarr; 835
-                </TableCell>
-                <TableCell className={classes.tableCell}>840</TableCell>
-                <TableCell className={classes.tableCell}>860</TableCell>
-                <TableCell className={classes.tableCell}>880</TableCell>
                 <TableCell className={classes.tableCell}>835-880</TableCell>
+                <TableCell className={classes.tableCell}>860</TableCell>
+                <TableCell className={classes.tableCell}>485</TableCell>
               </TableRow>
             </TableBody>
           </Table>
