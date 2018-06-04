@@ -11,10 +11,6 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import CircularProgress from "@material-ui/core/CircularProgress";
-
-// date
-import { format, isSameDay, differenceInDays } from "date-fns/esm";
 
 // styles
 const styles = theme => ({
@@ -45,9 +41,6 @@ const styles = theme => ({
 class PhenologyTable extends Component {
   render() {
     const { classes } = this.props;
-    const { isLoading, dateOfInterest } = this.props.appStore.paramsStore;
-
-    const { dataForTable, missingDays } = this.props.appStore.currentModel;
 
     return (
       <div className={classes.root}>

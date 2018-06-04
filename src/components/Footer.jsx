@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Modal from "@material-ui/core/Modal";
 import Hidden from "@material-ui/core/Hidden";
-
+import Divider from "@material-ui/core/Divider";
 import Acknowledgment from "./Acknowledgment";
 
 const styles = theme => ({
@@ -18,8 +18,8 @@ const styles = theme => ({
     height: 150,
     // background: "white",
     margin: 0,
-    padding: 0,
-    borderTop: "1px solid #E7E7E7"
+    padding: 0
+    // borderTop: "1px solid #E7E7E7"
   },
   button: {
     color: "#6C6E70",
@@ -41,6 +41,7 @@ class Footer extends Component {
     return (
       <Fragment>
         <Hidden only="xs">
+          <Divider style={{ width: "50%", margin: "0 auto" }} />
           <div className={classes.footer}>
             <Typography variant="caption" style={{ margin: 0, padding: 0 }}>
               <Button className={classes.button}>MORE INFO</Button>

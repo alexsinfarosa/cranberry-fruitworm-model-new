@@ -161,15 +161,18 @@ class App extends Component {
 
         {/* main content */}
         {station && (
-          <main className={classes.content}>
+          <main
+            className={classes.content}
+            style={{
+              maxWidth: 1200,
+              margin: "0 auto",
+              flex: 1,
+              flexDirection: "column"
+            }}
+          >
             <div className={classes.toolbar} />
 
-            <div
-              style={{
-                maxWidth: 1200,
-                margin: "0 auto"
-              }}
-            >
+            <div>
               <Hidden only="xs">
                 <Typography
                   variant="display1"
@@ -198,14 +201,7 @@ class App extends Component {
 
             <Fragment>
               {data.length !== 0 ? (
-                <div
-                  style={{
-                    maxWidth: 1200,
-                    margin: "0 auto",
-                    flexDirection: "column",
-                    flex: 1
-                  }}
-                >
+                <div style={{ flex: 1 }}>
                   <GDDTable />
                   <PhenologyTable />
                 </div>
@@ -216,8 +212,6 @@ class App extends Component {
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    maxWidth: 1200,
-                    margin: "0 auto",
                     flex: 1
                   }}
                 >
@@ -227,14 +221,7 @@ class App extends Component {
               )}
             </Fragment>
 
-            <div
-              style={{
-                maxWidth: 1200,
-                margin: "0 auto"
-              }}
-            >
-              <Footer />
-            </div>
+            <Footer />
           </main>
         )}
 
