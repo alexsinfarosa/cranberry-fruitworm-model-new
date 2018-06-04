@@ -18,7 +18,6 @@ export const fetchCurrentStationHourlyData = params => {
 const sisterIdNetworkUrl = `${protocol}//newa2.nrcc.cornell.edu/newaUtil/stationSisterInfo`;
 const fetchSisterStationIdAndNetwork = params => {
   const [id, network] = params.sid.split(" ");
-
   return axios(`${sisterIdNetworkUrl}/${id}/${network}`)
     .then(res => res.data.temp)
     .catch(err =>
