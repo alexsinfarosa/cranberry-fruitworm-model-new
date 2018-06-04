@@ -220,8 +220,9 @@ class App extends Component {
                 </div>
               )}
             </Fragment>
-
-            <Footer />
+            <div>
+              <Footer />
+            </div>
           </main>
         )}
 
