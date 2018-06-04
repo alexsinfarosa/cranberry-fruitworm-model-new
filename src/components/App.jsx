@@ -20,7 +20,7 @@ import LeftPanel from "./LeftPanel";
 import GDDTable from "./GDDTable";
 import USMap from "./USMap";
 import Footer from "./Footer";
-import Disclaimer from "./Disclaimer";
+import PhenologyTable from "./PhenologyTable";
 // import OutOfSeasonMessage from "./OutOfSeasonMessage";
 
 const drawerWidth = 255;
@@ -207,7 +207,7 @@ class App extends Component {
                   }}
                 >
                   <GDDTable />
-                  <Disclaimer />
+                  <PhenologyTable />
                 </div>
               ) : (
                 <div
