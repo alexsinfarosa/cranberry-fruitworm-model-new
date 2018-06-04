@@ -160,7 +160,7 @@ class App extends Component {
         </Hidden>
 
         {/* main content */}
-        {station && (
+        {station ? (
           <main
             className={classes.content}
             style={{
@@ -223,6 +223,27 @@ class App extends Component {
             <div>
               <Footer />
             </div>
+          </main>
+        ) : (
+          <main
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              flex: 1
+            }}
+          >
+            <Hidden smUp>
+              <Typography variant="heading">
+                TAP THE &equiv; ICON TO MAKE A SELECTION
+              </Typography>
+            </Hidden>
+            <Hidden only="xs">
+              <Typography variant="heading">
+                MAKE A SELECTION FROM THE LEFT PANEL
+              </Typography>
+            </Hidden>
           </main>
         )}
 
