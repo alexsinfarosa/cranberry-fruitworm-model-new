@@ -103,7 +103,7 @@ export default class ParamsStore {
   }
   setDateOfInterest = d => {
     this.dateOfInterest = d;
-    console.log(getYear(this.dateOfInterest), getYear(this.bioFix));
+
     if (this.bioFix) {
       if (getYear(this.dateOfInterest) !== getYear(this.bioFix))
         this.setBioFix(null);
