@@ -26,6 +26,7 @@ export const matchIconsToStations = (station, state) => {
     network === "miwx" ||
     network === "oardc" ||
     network === "nysm" ||
+    network === "nwon" ||
     ((network === "cu_log" || network === "culog") && station.state !== "NY")
   ) {
     return station.state === postalCode || postalCode === "ALL"
@@ -47,6 +48,15 @@ export const matchIconsToStations = (station, state) => {
 };
 
 export const vXDef = {
+  nwon: {
+    pcpn: 5,
+    temp: 23,
+    rhum: 24,
+    lwet: 118,
+    wspd: 28,
+    wdir: 27,
+    srad: 132
+  },
   newa: {
     pcpn: 5,
     temp: 23,
@@ -190,7 +200,7 @@ export const unflatten = array => {
 
 // Convert Fahrenheit to Celcius
 export const fahrenheitToCelcius = (t, missing) =>
-  t === missing ? t : ((t - 32) * 5 / 9).toFixed(1);
+  t === missing ? t : (((t - 32) * 5) / 9).toFixed(1);
 
 // Convert Celcius to Fahrenheit
 export const celciusToFahrenheit = (t, missing) =>
