@@ -136,6 +136,7 @@ class App extends Component {
             ModalProps={{
               keepMounted: true
             }}
+            style={{ height: "100vh" }}
           >
             <LeftPanel
               closeDrawer={this.closeDrawer}
@@ -151,6 +152,7 @@ class App extends Component {
             classes={{
               paper: classes.drawerPaper
             }}
+            style={{ height: "100vh" }}
           >
             <LeftPanel
               closeDrawer={this.closeDrawer}
